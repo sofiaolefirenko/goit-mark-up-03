@@ -37,7 +37,7 @@ h6 p {
 }
 
 .container {
-    max-width: 1158px;
+    width: 1158px;
    padding-right: 15px;
    padding-left: 15px;
     margin-left: auto;
@@ -258,9 +258,20 @@ border-radius: 4px;
 .title-container {
     width: calc((100% - 72px) / 4);
 }
-.title-team {
-    margin-bottom: 8px;
-}
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
 .title-class {
     display: flex;
     align-items: center;
@@ -275,6 +286,7 @@ border-radius: 4px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .all-benefits {
@@ -338,6 +350,7 @@ border-radius: 4px;
 
 .Team {
     display: flex;
+    gap: 24px;
     background-color: #FFFFFF;
 }
 
@@ -378,12 +391,23 @@ padding-top: 8px;
 
 /* OUR PORTFOLIO */
 .section-portfolio {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.team-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 .portfolio-list {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.our-new-portfolio {
+    width: calc((100% - 48px) / 3);
 }
 
 .portfoli-title {

@@ -22,7 +22,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #fff;
-    text-align: center;
+
 
 }
 
@@ -38,10 +38,8 @@ h6 p {
 
 .container {
     width: 1158px;
-   padding-right: 15px;
-   padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
+   padding: 0 15px;
+    margin: 0 auto;
 }
 
 /* ========HEADER======= */
@@ -182,29 +180,15 @@ button {
 
 /* =========HERO======== */
 .hero-class {
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
+    
     background-color: #2e2f42;
-    color: #2e2f42;
+
     padding: 188px 0
 }
 .button {
      display: block;
      min-width: 169px;
      border: none;
-}
-.only-container {
-    padding-top: 188px;
-    padding-bottom: 179px;
-    padding-left: 316px;
-    padding-right: 316px;
-
 }
 
 .button-container {
@@ -218,15 +202,8 @@ border-radius: 4px;
 }
 
 
-.tape-button {
-    
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: #fff;
 
-}
+
 
 .button:hover,
 .button:focus {
@@ -236,29 +213,40 @@ border-radius: 4px;
 
 }
 .tape-button{
-    border-radius: 4px;
-        padding: 16px 32px;
-        width: 169px;
-        height: 56px;
-    font-weight: 500;
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
         color: #fff;
-        
+        background: #4d5ae5;
+        border-radius: 4px;
+        min-width: 169px;
+        height: 56px;
+        border: none;
 }
 .main-taitle {
-    max-width: 496px;
-    font-weight: 700;
-    font-size: 56px;
-    margin-bottom: 52px;
-}
+    margin: 0 auto 48px auto;
+        margin-bottom: 48px;
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+        background: #2e2f42;
+    }
+
 
 /* =====BENEFITS====== */
 .benefits-class {
-    padding-top: 53px;
-    padding-bottom: 60px;
-    padding: 120px 0
+    padding: 120px 0 120px;
+}
+.section-pagins {
+    margin-left: auto;
+    margin-right: auto;
 }
 .title-container {
     width: calc((100% - 72px) / 4);
@@ -279,7 +267,6 @@ border-radius: 4px;
 
 .title-class {
     display: flex;
-    align-items: center;
     gap: 24px;
     
 }
@@ -336,17 +323,25 @@ border-radius: 4px;
     border: 1px solid #e7e9fc;
     border-top: none;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 
 .section-team {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 120px 0 120px;
     background-color: #F4F4FD;
-    padding: 120px 0;
-    gap: 24px;
 
 }
+.title-team-portfolio {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-transform: capitalize;
+        color: #2e2f42;
+        margin-bottom: 72px;
+    }
 
 .title-team {
     font-weight: 700;
@@ -364,14 +359,11 @@ border-radius: 4px;
 .team {
     display: flex;
     gap: 24px;
-    background-color: #FFFFFF;
+    
 }
 
 .expert-team {
-    border-radius: 0 0 4px 4px;
 padding: 32px 0px;
-width: 264px;
-height: 380px;
 }
 
 .name-team {
@@ -390,11 +382,10 @@ height: 380px;
 
 .team-our {
     border-radius: 0 0 4px 4px;
-        padding: 0px 0px 32px 0px;
-        width: 264px;
-        
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 3* 24px) / 4);
+    margin: 0;
+    padding: 0;
 }
 
 .about-team {
@@ -407,18 +398,18 @@ padding-top: 8px;
 
 /* OUR PORTFOLIO */
 .section-portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0 120px;
 }
 .portfolio-container {
-
+max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    width: calc((100% - 48px) / 3);
 }
 .our-new-portfolio {
 width: calc((100% - 48px) / 3);
@@ -472,17 +463,14 @@ width: calc((100% - 48px) / 3);
 /* ======FOOTER===== */
 .footer-nav {
     background-color: #2e2f42;
-    margin-left: auto;
-    margin-right: auto;
     padding: 100px 0;
-    margin-bottom: 16px;
+    padding: 100px 0;
 
 }
 
 .footer-section {
     justify-content: space-between;
     padding-top: 60px;
-    padding: 100px 0
 }
 .logo-footer {
     font-family: "Raleway", sans-serif;
